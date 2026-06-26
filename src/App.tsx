@@ -223,11 +223,10 @@ export default function App() {
 
   const result = useMemo(() => calculate(inp), [inp]);
 
-  const riskConfig = ((): { label: string; color: string; bg: string; border: string } => {
-    if (result.risk === "caution") return { label: "注意", color: "text-amber-500", bg: "bg-amber-50 dark:bg-amber-900/20", border: "border-amber-200 dark:border-amber-800" };
-    if (result.risk === "danger") return { label: "危険", color: "text-red-500", bg: "bg-red-50 dark:bg-red-900/20", border: "border-red-200 dark:border-red-800" };
-    return { label: "安全", color: "text-green-500", bg: "bg-green-50 dark:bg-green-900/20", border: "border-green-200 dark:border-green-800" };
-  })();
+  const riskLabel = result.risk === "danger" ? "危険" : result.risk === "caution" ? "注意" : "安全";
+  const riskColor = result.risk === "danger" ? "text-red-500" : result.risk === "caution" ? "text-amber-500" : "text-green-500";
+  const riskBg = result.risk === "danger" ? "bg-red-50 dark:bg-red-900/20" : result.risk === "caution" ? "bg-amber-50 dark:bg-amber-900/20" : "bg-green-50 dark:bg-green-900/20";
+  const riskBorder = result.risk === "danger" ? "border-red-200 dark:border-red-800" : result.risk === "caution" ? "border-amber-200 dark:border-amber-800" : "border-green-200 dark:border-green-800";
 
   const captureRef = useRef<HTMLDivElement>(null);
 
@@ -308,8 +307,8 @@ export default function App() {
         {/* ── RISK ── */}
         <section>
           <SectionTitle color="blue">⚠️ 返済負担リスク診断</SectionTitle>
-          <div className={`rounded-2xl border p-4 flex items-center gap-3 ${riskConfig.bg} ${riskConfig.border}`}>
-            <span className={`text-2xl font-bold ${riskConfig.color}`}>{riskConfig.label}</span>
+          <div className={`rounded-2xl border p-4 flex items-center gap-3 ${riskBg} ${riskBorder}`}>
+            <span className={`text-2xl font-bold ${riskColor}`}>{riskLabel}</span>
             <p className="text-sm text-gray-600 dark:text-gray-400 leading-snug">
               年間返済額 <span className="font-semibold text-gray-900 dark:text-white">{fmtM(result.annualPayment)}</span>　返済負担率 <span className="font-semibold text-gray-900 dark:text-white">{inp.income > 0 ? (result.annualPayment / inp.income * 100).toFixed(1) : "－"}%</span><br />
               25%未満：安全　25〜35%：注意　35%超：危険
