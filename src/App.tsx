@@ -413,7 +413,7 @@ export default function App() {
 
             {/* NISA口座 */}
             <a
-              href="https://rpx.a8.net/svt/ejp?a8mat=4B650G+D6IHWY+2HOM+BW8O1&rakuten=y&a8ejpredirect=http%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2F0ea62065.34400275.0ea62066.204f04c0%2Fa26062629207_4B650G_D6IHWY_2HOM_BW8O1%3Fpc%3Dhttps%253A%252F%252Faccount.rakuten-sec.co.jp%26m%3Dhttps%253A%252F%252Faccount.rakuten-sec.co.jp"
+              href="https://px.a8.net/svt/ejp?a8mat=4B650H+AO0LYQ+1WP2+15ORS2"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-4 bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl rounded-2xl border border-white/60 dark:border-gray-700/60 shadow-sm p-4 active:opacity-70 transition-opacity"
@@ -422,11 +422,11 @@ export default function App() {
                 📈
               </div>
               <div className="flex-1 min-w-0">
-                <p className="text-xs text-green-500 font-semibold mb-0.5">新NISA</p>
+                <p className="text-xs text-green-500 font-semibold mb-0.5">株式取引</p>
                 <p className="text-sm font-semibold text-gray-900 dark:text-white leading-snug">
-                  楽天証券でNISA口座を開く
+                  DMM株ではじめる！株式取引
                 </p>
-                <p className="text-xs text-gray-400 mt-0.5">口座開設無料・楽天ポイントも貯まる →</p>
+                <p className="text-xs text-gray-400 mt-0.5">口座開設無料・手数料業界最安水準 →</p>
               </div>
               <span className="text-gray-300 dark:text-gray-600 text-lg flex-shrink-0">›</span>
             </a>
