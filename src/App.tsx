@@ -223,11 +223,12 @@ export default function App() {
 
   const result = useMemo(() => calculate(inp), [inp]);
 
-  const riskConfig = {
+  const riskConfigMap = {
     safe: { label: "安全", color: "text-green-500", bg: "bg-green-50 dark:bg-green-900/20", border: "border-green-200 dark:border-green-800" },
     caution: { label: "注意", color: "text-amber-500", bg: "bg-amber-50 dark:bg-amber-900/20", border: "border-amber-200 dark:border-amber-800" },
     danger: { label: "危険", color: "text-red-500", bg: "bg-red-50 dark:bg-red-900/20", border: "border-red-200 dark:border-red-800" },
-  }[result.risk];
+  };
+  const riskConfig = riskConfigMap[result.risk] ?? riskConfigMap.safe;
 
   const captureRef = useRef<HTMLDivElement>(null);
 
