@@ -1,4 +1,3 @@
-
 import { useState, useMemo, useCallback, useRef } from "react";
 import {
   AreaChart,
@@ -414,7 +413,7 @@ export default function App() {
 
             {/* NISA口座 */}
             <a
-              href="https://YOUR_AFFILIATE_LINK_NISA_HERE"
+              href="https://rpx.a8.net/svt/ejp?a8mat=4B650G+D6IHWY+2HOM+BW8O1&rakuten=y&a8ejpredirect=http%3A%2F%2Fhb.afl.rakuten.co.jp%2Fhgc%2F0ea62065.34400275.0ea62066.204f04c0%2Fa26062629207_4B650G_D6IHWY_2HOM_BW8O1%3Fpc%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8QCqBVGIa4eCbfivMMoCyKzVUCUxyh_7vTF3TqwDJq0hrfMoUD5jxbH5QVOhdeP49iYkSNHu4OE7qqGrUkdif0qAuIpVggRaxbk32qHBG_Ztlo_1vxqmzAM9nCWZLljUGbOZXJxHyO4TZ5GXVc0zKuQc5EixKSPCbeJvM4zFE_wIUjKjA4EZl_6GJYKC8pC0jgVdBLTMTOMOGw1Yc--WJSJtf8fk%2526u%253DaHR0cHMlM2ElMmYlMmZhY2NvdW50LnJha3V0ZW4tc2VjLmNvLmpwJTJmY2dpLWJpbiUyZmJ0cmFja2luZyUzZmJuYW1lJTNkTVNfYnJhbmRfcmFrdXRlbl9ubzFfMDIlMjZhY2NJbnB1dFJvdXRlJTNkMCUyNlVSTCUzZGh0dHBzJTNhJTJmJTJmd3d3LnJha3V0ZW4tc2VjLmNvLmpwJTJmd2ViJTJmbHAlMmZzdGFydF9ubzFfMDIlMmYlM2ZzY2xpZCUyNTNEYV9NU19icmFuZF9yYWt1dGVuX25vMV8wMiUyNm1zY2xraWQlM2RhZDYyZDQ0YmJiMTAxMDQ1MTU5MmJlNzViYmM5OGM1Ng%2526rlid%253Dad62d44bbb1010451592be75bbc98c56%26m%3Dhttps%253A%252F%252Fwww.bing.com%252Faclick%253Fld%253De8QCqBVGIa4eCbfivMMoCyKzVUCUxyh_7vTF3TqwDJq0hrfMoUD5jxbH5QVOhdeP49iYkSNHu4OE7qqGrUkdif0qAuIpVggRaxbk32qHBG_Ztlo_1vxqmzAM9nCWZLljUGbOZXJxHyO4TZ5GXVc0zKuQc5EixKSPCbeJvM4zFE_wIUjKjA4EZl_6GJYKC8pC0jgVdBLTMTOMOGw1Yc--WJSJtf8fk%2526u%253DaHR0cHMlM2ElMmYlMmZhY2NvdW50LnJha3V0ZW4tc2VjLmNvLmpwJTJmY2dpLWJpbiUyZmJ0cmFja2luZyUzZmJuYW1lJTNkTVNfYnJhbmRfcmFrdXRlbl9ubzFfMDIlMjZhY2NJbnB1dFJvdXRlJTNkMCUyNlVSTCUzZGh0dHBzJTNhJTJmJTJmd3d3LnJha3V0ZW4tc2VjLmNvLmpwJTJmd2ViJTJmbHAlMmZzdGFydF9ubzFfMDIlMmYlM2ZzY2xpZCUyNTNEYV9NU19icmFuZF9yYWt1dGVuX25vMV8wMiUyNm1zY2xraWQlM2RhZDYyZDQ0YmJiMTAxMDQ1MTU5MmJlNzViYmM5OGM1Ng%2526rlid%253Dad62d44bbb1010451592be75bbc98c56"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-4 bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl rounded-2xl border border-white/60 dark:border-gray-700/60 shadow-sm p-4 active:opacity-70 transition-opacity"
@@ -425,9 +424,9 @@ export default function App() {
               <div className="flex-1 min-w-0">
                 <p className="text-xs text-green-500 font-semibold mb-0.5">新NISA</p>
                 <p className="text-sm font-semibold text-gray-900 dark:text-white leading-snug">
-                  口座開設は無料・最短翌日から積立
+                  楽天証券でNISA口座を開く
                 </p>
-                <p className="text-xs text-gray-400 mt-0.5">人気のネット証券を今すぐ開設 →</p>
+                <p className="text-xs text-gray-400 mt-0.5">口座開設無料・楽天ポイントも貯まる →</p>
               </div>
               <span className="text-gray-300 dark:text-gray-600 text-lg flex-shrink-0">›</span>
             </a>
